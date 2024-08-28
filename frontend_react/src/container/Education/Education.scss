@@ -1,0 +1,25 @@
+.app__educations {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .app__educations-item {
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem;
+
+    img {
+        width: 150%;
+        object-fit: cover;
+    }
+
+    @media screen and (max-width: 600px ) {
+        width: 200px;
+        margin: 2rem 4rem;
+    }
+  }

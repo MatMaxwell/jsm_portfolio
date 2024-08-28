@@ -1,0 +1,70 @@
+// Skills.scss
+
+// Wrapper for the skills section
+.app__skills-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+
+// Each skill item
+.app__profile {
+  background-color: rgba(0, 0, 0, 0.020); // light background for contrast
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  max-width: 150px; // Adjust as necessary
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); // subtle shadow
+  transition: transform 0.01s ease;
+
+  &:hover {
+    transform: scale(1.05); // Slightly enlarge on hover
+  }
+}
+
+// The container for the skill icon
+.app__skills-picture {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto; // Centers the image
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+  }
+}
+
+// Text styles
+.bold-text {
+  font-weight: 700;
+  font-size: 16px;
+  color: #333; // Darker text color
+}
+
+.p-text {
+  font-size: 14px;
+  color: #666; // Slightly lighter text for levels
+  margin-top: 5px;
+}
+
+// Title styling
+.head-text {
+  font-size: 28px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
+
+  span {
+    color: #007BFF; // Highlight color for "Skills"
+  }
+}

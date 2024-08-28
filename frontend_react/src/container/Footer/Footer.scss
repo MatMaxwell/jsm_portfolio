@@ -1,0 +1,39 @@
+.app__footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  padding: 10px 20px;     /* Adjust padding as needed */
+
+  display: flex;
+  justify-content: center; /* Center the social icons horizontally */
+  align-items: center;
+}
+
+.app__social {
+  position: fixed;
+  left: 20px;             /* Distance from the left side of the screen */
+  bottom: 20px;           /* Distance from the bottom of the screen */
+  z-index: 1000;          /* Ensures it stays on top of other content */
+  
+  display: flex;          /* Arrange the icons in a row */
+  flex-direction: row;    /* Explicitly set the direction to row */
+  align-items: center;    /* Align items centrally if needed */
+  gap: 10px;              /* Space between each icon */
+
+  div {
+    font-size: 24px;      /* Adjust icon size */
+    color: #0000ff;          /* Default icon color */
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #000000b7;     /* Hover color */
+    }
+
+    /* Ensure no background is applied */
+    background: none;     /* Remove any background */
+    border: none;         /* Remove any border */
+    padding: 0;           /* Remove any padding */
+  }
+}
